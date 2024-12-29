@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacy for Enhancing Foot Traffic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 600px;
+        }
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+        }
+        .cheeky-message {
+            font-style: italic;
+            font-size: 14px;
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Advocacy for Enhancing Foot Traffic in the Philippines</h1>
+        <p>Building sustainable, walkable communities for a better future!</p>
+    </header>
+
+    <nav>
+        <a onclick="loadContent('pages/introduction.html')">Introduction</a>
+        <a onclick="loadContent('pages/walkable-communities.html')">Walkable Communities</a>
+        <a onclick="loadContent('pages/local-businesses.html')">Local Businesses</a>
+        <a onclick="loadContent('pages/public-transport.html')">Public Transport</a>
+        <a onclick="loadContent('pages/community-engagement.html')">Community Engagement</a>
+        <a onclick="loadContent('pages/conclusion.html')">Conclusion</a>
+    </nav>
+
+    <div class="container">
+        <iframe id="content-frame" src="pages/introduction.html"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Foot Traffic Advocacy</p>
+        <p class="cheeky-message">Paul Phoenix was here ;3</p>
+    </footer>
+
+    <script>
+        function loadContent(page) {
+            document.getElementById("content-frame").src = page;
+        }
+    </script>
+</body>
+</html>
